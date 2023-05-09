@@ -36,15 +36,16 @@ export const heroData = [
 ];
 
 export const categories = [
+ 
   {
     id: 1,
-    name: "Smoothie",
-    urlParamName: "smoothie",
+    name: "Fresh Juice",
+    urlParamName: "fresh",
   },
   {
     id: 2,
-    name: "Fresh Juice",
-    urlParamName: "fresh",
+    name: "Smoothie",
+    urlParamName: "smoothie",
   },
   
  

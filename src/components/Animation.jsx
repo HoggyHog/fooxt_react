@@ -456,15 +456,15 @@ useLayoutEffect(()=>{
             </div>
             <div className='w-screen md:w-[50vw] h-full bg-fooxtYellow p-10 flex justify-center'>
                 <div className='md:block play-mobile bg-mobile w-[50vw] h-[40vh] md:w-[20vw] md:h-[60vh] bg-center bg-no-repeat bg-contain p-8 md:p-10 2xl:p-14'>
-                    <img className="play-mobile-screen1 2xl:w-[12.5vw] md:w-[14.5vw] w-[65%] h-[90%] sm:w-[80%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 absolute -mx-0 xsm:-mx-3" src={screen1}/>
-                    <img className="play-mobile-screen2 2xl:w-[12.5vw] md:w-[14.5vw] w-[32.5vw] h-[90%] sm:w-[80%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 opacity-0 absolute -mx-0 xsm:-mx-3" src={screen2}/>
-                    <img className="play-mobile-screen3 2xl:w-[12.5vw] md:w-[14.5vw] w-[32.5vw] h-[90%] sm:w-[80%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 opacity-0 absolute -mx-0 xsm:-mx-3" src={screen3}/>
-                    <img className="play-mobile-screen4 2xl:w-[12.5vw] md:w-[14.5vw] w-[32.5vw] h-[90%] sm:w-[80%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 opacity-0 absolute -mx-0 xsm:-mx-3 " src={screen4}/>
-                    <img className="play-mobile-screen5 2xl:w-[12.5vw] md:w-[14.5vw] w-[32.5vw] h-[90%] sm:w-[80%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 opacity-0 absolute -mx-0 xsm:-mx-3" src={screen5}/>
-                    <img className="play-mobile-screen6 2xl:w-[12.5vw] md:w-[14.5vw] w-[32.5vw] h-[90%] sm:w-[80%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 opacity-0 absolute -mx-0 xsm:-mx-3 " src={screen6}/>
-                    <img className="play-mobile-screen7 2xl:w-[12.5vw] md:w-[14.5vw] w-[32.5vw] h-[90%] sm:w-[80%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 opacity-0 absolute -mx-0 xsm:-mx-3" src={screen7}/>
-                    <img className="play-mobile-screen8 2xl:w-[12.5vw] md:w-[14.5vw] w-[32.5vw] h-[90%] sm:w-[80%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 opacity-0 absolute -mx-0 xsm:-mx-3" src={screen8}/>
-                    <img className="play-mobile-screen9 2xl:w-[12.5vw] md:w-[14.5vw] w-[32.5vw] h-[90%] sm:w-[80%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 opacity-0 absolute -mx-0 xsm:-mx-3" src={screen9}/>
+                    <img className="play-mobile-screen1 w-[36.5vw] sm:w-[82%] md:w-[14.5vw] 2xl:w-[12.5vw]  h-[90%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 absolute md:-mx-0 xsm:-mx-2" src={screen1}/>
+                    <img className="play-mobile-screen2 w-[36.5vw] sm:w-[82%] md:w-[14.5vw] 2xl:w-[12.5vw] h-[90%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 opacity-0 absolute md:-mx-0 xsm:-mx-2" src={screen2}/>
+                    <img className="play-mobile-screen3 w-[36.5vw] sm:w-[82%] md:w-[14.5vw] 2xl:w-[12.5vw] h-[90%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 opacity-0 absolute md:-mx-0 xsm:-mx-2" src={screen3}/>
+                    <img className="play-mobile-screen4 w-[36.5vw] sm:w-[82%] md:w-[14.5vw] 2xl:w-[12.5vw] h-[90%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 opacity-0 absolute md:-mx-0 xsm:-mx-2 " src={screen4}/>
+                    <img className="play-mobile-screen5 w-[36.5vw] sm:w-[82%] md:w-[14.5vw] 2xl:w-[12.5vw] h-[90%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 opacity-0 absolute md:-mx-0 xsm:-mx-2" src={screen5}/>
+                    <img className="play-mobile-screen6 w-[36.5vw] sm:w-[82%] md:w-[14.5vw] 2xl:w-[12.5vw] h-[90%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 opacity-0 absolute md:-mx-0 xsm:-mx-2 " src={screen6}/>
+                    <img className="play-mobile-screen7 w-[36.5vw] sm:w-[82%] md:w-[14.5vw] 2xl:w-[12.5vw] h-[90%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 opacity-0 absolute md:-mx-0 xsm:-mx-2" src={screen7}/>
+                    <img className="play-mobile-screen8 w-[36.5vw] sm:w-[82%] md:w-[14.5vw] 2xl:w-[12.5vw] h-[90%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 opacity-0 absolute md:-mx-0 xsm:-mx-2" src={screen8}/>
+                    <img className="play-mobile-screen9 w-[36.5vw] sm:w-[82%] md:w-[14.5vw] 2xl:w-[12.5vw] h-[90%] -mt-5 sm:-mt-4 md:-mt-5 2xl:-mt-9 opacity-0 absolute md:-mx-0 xsm:-mx-2" src={screen9}/>
      
                 </div>
             </div>

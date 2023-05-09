@@ -211,14 +211,27 @@ const RowContainer = ({ flag, data, scrollValue }) => {
       
       {data && data.length > 0 ? (
         data.map((item) => (
-          <motion.div onClick={()=>setOpenCard(item?.id)}
+          
+          <motion.div 
             key={item?.id}
-            className="w-[175px] h-[175px] min-w-[275px] md:w-300 md:min-w-[300px]  bg-fooxtBlack rounded-lg py-2 px-4  my-12 mx-6 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative"
+            className={`w-[175px] h-[175px] min-w-[275px] md:w-300 md:min-w-[300px]  bg-fooxtBlack rounded-lg py-2 px-4  my-12 mx-6 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative`}
             whileHover={{ scale: 1.2 }}
+            onClick={()=>{
+              if(item?.status!='coming'){
+                setOpenCard(item?.id)
+              }
+            }}
           >
-            <div className="w-full flex items-center justify-between">
+            {item?.status=='coming'?(
+              <div className="text-white absolute z-5">
+                COMING SOON
+              </div>
+            ):
+            (
+              <>
+                <div className="w-full flex items-center justify-between">
               <motion.div
-                className="w-36 h-36 -mt-8 drop-shadow-2xl rounded-lg object-contain"
+                className="w-32 h-36 -mt-8 drop-shadow-2xl rounded-lg object-contain"
                
               >
                 <img
@@ -237,21 +250,24 @@ const RowContainer = ({ flag, data, scrollValue }) => {
               >
                 <MdShoppingBasket className="text-fooxtBlack " />
               </motion.div>
-            </div>
+                </div>
 
-            <div className="w-full flex flex-col items-end justify-end -mt-8">
-              <p className="text-white font-semibold text-sm p-2">
-                {item?.title}
-              </p>
-              <p className="mt-1 text-sm text-white">
-                {item?.calories} Calories
-              </p>
-              <div className="flex items-center gap-8">
-                <p className="text-lg text-white font-semibold">
-                  <span className="text-sm text-fooxtYellow" >₹</span> {item?.price}
-                </p>
-              </div>
-            </div>
+                <div className="w-full flex flex-col items-end justify-end -mt-8">
+                  <p className="text-white font-semibold text-sm p-2">
+                    {item?.title}
+                  </p>
+                  <p className="mt-1 text-sm text-white">
+                    {item?.calories} Calories
+                  </p>
+                  <div className="flex items-center gap-8">
+                    <p className="text-lg text-white font-semibold">
+                      <span className="text-sm text-fooxtYellow" >₹</span> {item?.price}
+                    </p>
+                  </div>
+                </div>
+              </>
+            )}
+            
           </motion.div>
         ))
       ) : (
