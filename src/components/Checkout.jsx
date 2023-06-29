@@ -151,7 +151,7 @@ const Checkout = () => {
         setTot(totalPrice);
         console.log(tot);
 
-        if(address.length>0){
+        if(address && address.length>0){
             setAddressClicked(1)
         }
       }, []);
@@ -439,7 +439,7 @@ const Checkout = () => {
 
                         <button
                         type="button"
-                        className={` md:w-[30%] border-none outline-none bg-emerald-400 px-12 py-2 rounded-lg text-lg text-white font-semibold mx-auto ${address.length==3? 'hidden':""}`}
+                        className={` md:w-[30%] border-none outline-none bg-emerald-400 px-12 py-2 rounded-lg text-lg text-white font-semibold mx-auto ${(address && address.length==3)? 'hidden':""}`}
                         onClick={async()=>{
                             updateAddress()
                             
